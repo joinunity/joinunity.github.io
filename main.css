@@ -15,7 +15,7 @@ section {
 }
 
 .parallax-container {
-    z-index: 8001;
+    z-index: 8000;
     position: relative;
     height: 600px;
     width: 100%;
@@ -23,6 +23,17 @@ section {
     vertical-align: middle;
     text-align: center;
 }
+    .overlay {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(31,59,107,0.4);
+        z-index: 8001;
+        color: white;
+    }
     .text {
         z-index: 8002;
         position: absolute;
@@ -153,6 +164,12 @@ footer {
     }
     .quote {
         font-size: 48px;
+    }
+    .parallax-container {
+        background: transparent;
+    }
+    .overlay {
+        display: block;
     }
 }
 
