@@ -19,12 +19,11 @@ section {
     position: relative;
     height: 600px;
     width: 100%;
-    background-color: rgba(31,59,107,0.4);
+    background-color: transparent;
     vertical-align: middle;
     text-align: center;
 }
     .overlay {
-        display: none;
         position: absolute;
         top: 0;
         left: 0;
@@ -43,7 +42,6 @@ section {
         bottom: 0;
         padding: 0 40px;
         color: white;
-        line-height: 1em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -52,6 +50,17 @@ section {
         font-family: futura-pt;
         font-size: 120px;
     }
+        .headline {
+            line-height: 1em;
+        }
+    .subscribe {
+        padding-top: .7em;
+        font-family: proxima-nova;
+    }
+        .subscribe input, .subscribe button {
+            background: rgba(0,0,0,.5);
+            color: white;
+        }
     .quote {
         font-family: proxima-nova;
         font-size: 64px;
@@ -164,12 +173,6 @@ footer {
     }
     .quote {
         font-size: 48px;
-    }
-    .parallax-container {
-        background: transparent;
-    }
-    .overlay {
-        display: block;
     }
 }
 
