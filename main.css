@@ -9,9 +9,12 @@ html, body {
 
 section {
     padding: 25px 0 35px;
+    /*background: #fff;*/
+}
+
+.container-fluid {
     margin: 0 auto;
     width: 64%;
-    background: #fff;
 }
 
 .parallax-container {
@@ -29,7 +32,7 @@ section {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(31,59,107,0.4);
+        background-color: rgba(31,59,107,.42);
         z-index: 8001;
         color: white;
     }
@@ -61,6 +64,15 @@ section {
             background: rgba(0,0,0,.5);
             color: white;
         }
+            .subscribe button:hover {
+                background: rgba(0,0,0,.36);
+                color: white;
+            }
+            .subscribe button:active, .subscribe button:focus {
+                background: rgba(0,0,0,.66);
+                color: white;
+            }
+
     .quote {
         font-family: proxima-nova;
         font-size: 64px;
@@ -140,14 +152,21 @@ section {
                 opacity: .8;
             }
 
+.section-header {
+    margin-bottom: 1.3em;
+    line-height: 1.4em;
+}
 .letterspace {
     letter-spacing: 1px;
 }
 .uppercase {
     text-transform: uppercase;
 }
+.underspace {
+    margin: 2.5em 0 2em;
+}
 .icon {
-    margin: 3em 0 1.5em;
+    /*margin: 3em 0 1.5em;*/
 }
 
 pre {
