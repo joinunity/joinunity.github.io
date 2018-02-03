@@ -144,18 +144,7 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-device-width: 480px) {
-    .nav {
-        padding: 25px;
-    }
-    .big {
-        font-size: 66px;
-    }
-    .quote {
-        font-size: 48px;
-    }
-}
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
     .nav {
         padding: 25px;
     }
