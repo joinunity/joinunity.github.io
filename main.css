@@ -1,0 +1,188 @@
+@font-face{font-family:proxima-nova;src:
+    url("proxima-nova-300-normal.woff2") format("woff2"),
+    url("proxima-nova-300-normal.woff") format("woff"),
+    url("proxima-nova-300-normal.opentype") format("opentype");font-weight:300;font-style:normal;}
+@font-face{font-family:proxima-nova;src:
+    url("proxima-nova-400-normal.woff2") format("woff2"),
+    url("proxima-nova-400-normal.woff") format("woff"),
+    url("proxima-nova-400-normal.opentype") format("opentype");font-weight:400;font-style:normal;}
+@font-face{font-family:proxima-nova;src:
+    url("proxima-nova-500-normal.woff2") format("woff2"),
+    url("proxima-nova-500-normal.woff") format("woff"),
+    url("proxima-nova-500-normal.opentype") format("opentype");font-weight:500;font-style:normal;}
+@font-face{font-family:proxima-nova;src:
+    url("proxima-nova-700-normal.woff2") format("woff2"),
+    url("proxima-nova-700-normal.woff") format("woff"),
+    url("proxima-nova-700-normal.opentype") format("opentype");font-weight:700;font-style:normal;}
+@font-face{font-family:proxima-nova;src:
+    url("proxima-nova-400-italic.woff2") format("woff2"),
+    url("proxima-nova-400-italic.woff") format("woff"),
+    url("proxima-nova-400-italic.opentype") format("opentype");font-weight:400;font-style:italic;}
+@font-face{font-family:proxima-nova;src:
+    url("proxima-nova-700-italic.woff2") format("woff2"),
+    url("proxima-nova-700-italic.woff") format("woff"),
+    url("proxima-nova-700-italic.opentype") format("opentype");font-weight:700;font-style:italic;}
+@font-face{font-family:futura-pt;src:
+    url("futura-pt-700-normal.woff2") format("woff2"),
+    url("futura-pt-700-normal.woff") format("woff"),
+    url("futura-pt-700-normal.opentype") format("opentype");font-weight:700;font-style:normal;}
+@font-face{font-family:futura-pt;src:
+    url("futura-pt-700-italic.woff2") format("woff2"),
+    url("futura-pt-700-italic.woff") format("woff"),
+    url("futura-pt-700-italic.opentype") format("opentype");font-weight:700;font-style:italic;}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fefefe;
+    color: #333;
+    font-family: proxima-nova;
+}
+
+section {
+    padding: 25px 0 35px;
+    margin: 0 auto;
+    width: 64%;
+    background: #fff;
+}
+
+.parallax-container {
+    height: 600px;
+    width: 100%;
+    background: transparent;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(31,59,107,0.4);
+        z-index: 8001;
+        color: white;
+    }
+    .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 8002;
+        color: white;
+        line-height: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+    }
+    .big {
+        font-family: futura-pt;
+        font-size: 120px;
+    }
+    .quote {
+        font-family: proxima-nova;
+        font-size: 64px;
+        font-weight: 400;
+    }
+        .quote .quote-attribution {
+            margin-top: 0.3em;
+            font-style: italic;
+            display: block;
+        }
+
+.parallax-mirror {
+    z-index: 1 !important;
+}
+
+.nav {
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 80px;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    z-index: 8010;
+    color: white;
+}
+    .nav h1 {
+        font-family: futura-pt;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        display: table-cell;
+        width: 30%;
+        vertical-align: middle;
+        line-height: 1em;
+        z-index: 8011;
+        position: relative;
+    }
+        .nav h1 a {
+            font-family: futura-pt;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            line-height: 1em;
+            color: #fff;
+            text-decoration: none;
+        }
+            .nav h1 a:hover {
+                text-decoration: none;
+                opacity: .8;
+            }
+    .nav .links {
+        display: table-cell;
+        width: 70%;
+        text-align: right;
+        vertical-align: middle;
+    }
+        .nav .links a {
+            font-family: futura-pt;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-style: normal;
+            letter-spacing: 2px;
+            text-decoration: none;
+            line-height: 2em;
+            color: #fff;
+        }
+            .nav .links a:hover {
+                text-decoration: none;
+                opacity: .8;
+            }
+
+.letterspace {
+    letter-spacing: 1px;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.icon {
+    margin: 3em 0 1.5em;
+}
+
+pre {
+    overflow: auto
+}
+    pre code {
+        word-wrap: normal;
+        white-space: pre;
+    }
+
+footer {
+    color: #999;
+    padding: 30px;
+    text-align: center;
+}
